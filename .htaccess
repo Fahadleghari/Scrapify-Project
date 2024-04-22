@@ -1,0 +1,196 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+#deny from 2400:adc1:13f:3e00:81ac:9a4d:461d:9a01
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+# END cPanel-generated php ini directives, do not edit
+#Removing .php from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/.php !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# RewriteRule ^store/([0-9a-zA-z]+) store.php?name=$1 [NC,L]
+# RewriteRule ^all_stores/([0-9a-zA-z]+) all_stores.php?name=$1 [NC,L]
+# RewriteRule ^category/([0-9a-zA-z]+) category.php?name=$1 [NC,L]
+# RewriteRule ^blog_detail/([0-9a-zA-z]+) blog_detail.php?name=$1 [NC,L]
+# RewriteRule ^thankyou/([0-9a-zA-z]+) thankyou.php?name=$1 [NC,L]
+#ErrorDocument 404 https://www.stargell.com/404
+#ErrorDocument 403 https://www.stargell.com/404
+
+RewriteRule index.php https://localhost/shopus/home
+
+# Place the following in your .htaccess at doc root
+Options -Indexes
+    IndexIgnore *
+    Options +FollowSymLinks
+    DirectoryIndex index.php index.html
+    #COMMENT | This denys other sites from IFraming your site. It prevents clickjacking.
+    Header always append X-Frame-Options DENY
+    #COMMENT | This will enforce SSL on all pages. You must have a SSL certificate installed first.
+    #RewriteCond %{SERVER_PORT} 80
+    #RewriteRule ^(.*)$ https://example.com/$1 [R,L]
+    #COMMENT | REMOVE PATCH and PUT before uploading/updating/upgrading your site
+    RewriteCond %{REQUEST_METHOD} ^(DELETE|HEAD|OPTIONS|PATCH|PROPFIND|PUT|TRACE|TRACK)
+    RewriteRule .* - [F]
+    #COMMENT | Block most proxies
+    #RewriteCond %{HTTP:VIA} !^$ [OR]
+    #RewriteCond %{HTTP:FORWARDED} !^$ [OR]
+    #RewriteCond %{HTTP:USERAGENT_VIA} !^$ [OR]
+    #RewriteCond %{HTTP:X_FORWARDED_FOR} !^$ [OR]
+    #RewriteCond %{HTTP:PROXY_CONNECTION} !^$ [OR]
+    #RewriteCond %{HTTP:XPROXY_CONNECTION} !^$ [OR]
+    #RewriteCond %{HTTP:HTTP_PC_REMOTE_ADDR} !^$ [OR]
+    #RewriteCond %{HTTP:HTTP_CLIENT_IP} !^$
+    #RewriteRule ^(.*)$ - [F]
+    Order Deny,Allow
+    Deny from all
+    #COMMENT | Allows only browsers updated within the last couple years
+    SetEnvIfNoCase User-Agent .*ozilla/5.* good_bot
+    #COMMENT | Allows cPanel and cPanel Autossl
+    SetEnvIfNoCase User-Agent .*hec.* good_bot
+    SetEnvIfNoCase User-Agent .*omod.* good_bot
+    SetEnvIfNoCase User-Agent .*pane.* good_bot
+    SetEnvIfNoCase User-Agent .*utoss.* good_bot
+    #COMMENT | Allows Softaculous
+    SetEnvIfNoCase User-Agent .*oftaculou.* good_bot
+    #COMMENT | Allows youtube
+    SetEnvIfNoCase User-Agent .*outub.* good_bot
+    SetEnvIfNoCase User-Agent .*ou-tub.* good_bot
+    #COMMENT | Allows google/adsense/analytics bot
+    SetEnvIfNoCase User-Agent .*oogle.* good_bot
+    SetEnvIfNoCase User-Agent .*ens.* good_bot
+    SetEnvIfNoCase User-Agent .*nalytic.* good_bot
+    #COMMENT | Allows bing bot
+    SetEnvIfNoCase User-Agent bing good_bot
+    SetEnvIfNoCase User-Agent bing.* good_bot
+    SetEnvIfNoCase User-Agent .*bing.* good_bot
+    #COMMENT | Allows yahoo and slurp bots
+    SetEnvIfNoCase User-Agent .*aho.* good_bot
+    SetEnvIfNoCase User-Agent slur.* good_bot
+    SetEnvIfNoCase User-Agent .*slur.* good_bot
+    #COMMENT | Allows facebook bot
+    SetEnvIfNoCase User-Agent .*aceboo.* good_bot
+    #COMMENT | Allows pinterest bot
+    SetEnvIfNoCase User-Agent .*interes.* good_bot
+    #COMMENT | Allows linkedin bot
+    SetEnvIfNoCase User-Agent .*inkedi.* good_bot
+    SetEnvIfNoCase User-Agent .*inked-i.* good_bot
+    #COMMENT | Allows myspace bot
+    SetEnvIfNoCase User-Agent .*yspac.* good_bot
+    #COMMENT | Allows snapchat bot
+    SetEnvIfNoCase User-Agent .*nap.* good_bot
+    #COMMENT | Allows instragram bot
+    SetEnvIfNoCase User-Agent .*nsta.* good_bot
+    Allow from env=good_bot
+    
+    Options -Indexes
+    IndexIgnore *
+    Options +FollowSymLinks
+    DirectoryIndex index.php index.html
+    #COMMENT | This denys other sites from IFraming your site. It prevents clickjacking.
+    Header always append X-Frame-Options DENY
+    #COMMENT | This will enforce SSL on all pages. You must have a SSL certificate installed first.
+    #RewriteCond %{SERVER_PORT} 80
+    #RewriteRule ^(.*)$ https://example.com/$1 [R,L]
+    #COMMENT | REMOVE PATCH and PUT before uploading/updating/upgrading your site
+    RewriteCond %{REQUEST_METHOD} ^(DELETE|HEAD|OPTIONS|PATCH|PROPFIND|PUT|TRACE|TRACK)
+    RewriteRule .* - [F]
+    #COMMENT | Block most proxies
+    #RewriteCond %{HTTP:VIA} !^$ [OR]
+    #RewriteCond %{HTTP:FORWARDED} !^$ [OR]
+    #RewriteCond %{HTTP:USERAGENT_VIA} !^$ [OR]
+    #RewriteCond %{HTTP:X_FORWARDED_FOR} !^$ [OR]
+    #RewriteCond %{HTTP:PROXY_CONNECTION} !^$ [OR]
+    #RewriteCond %{HTTP:XPROXY_CONNECTION} !^$ [OR]
+    #RewriteCond %{HTTP:HTTP_PC_REMOTE_ADDR} !^$ [OR]
+    #RewriteCond %{HTTP:HTTP_CLIENT_IP} !^$
+    #RewriteRule ^(.*)$ - [F]
+    Order Deny,Allow
+    #COMMENT | This blocks visitors with no identification
+    #COMMENT | Trust me you want this, as only a human hacker uses this particular rule versus a bot
+    SetEnvIfNoCase User-Agent ^$ bad_bot
+    #COMMENT | This blocks a notorious hacking trick, very dangerous.
+    #COMMENT | Trust me you want this, as only a human hacker uses this particular rule versus a bot
+    SetEnvIfNoCase User-Agent ^Mozilla/5.0$ bad_bot
+    SetEnvIfNoCase User-Agent ^-$ bad_bot
+    #COMMENT | This blocks a notorious hacking trick, very dangerous.
+    #COMMENT | Trust me you want this, as only a human hacker uses this particular rule versus a bot
+    SetEnvIfNoCase User-Agent ^Mozilla$ bad_bot
+    #COMMENT | This blocks very old and dangerous browsers
+    SetEnvIfNoCase User-Agent .*ozilla/1.* bad_bot
+    SetEnvIfNoCase User-Agent .*ozilla/2.* bad_bot
+    SetEnvIfNoCase User-Agent .*ozilla/3.* bad_bot
+    SetEnvIfNoCase User-Agent .*ozilla/4.* bad_bot
+    #COMMENT | This blocks Baidu
+    SetEnvIfNoCase User-Agent .*ai.* bad_bot
+    #COMMENT | This blocks Yandex
+    SetEnvIfNoCase User-Agent .*ande.* bad_bot
+    #COMMENT | This blocks most Scanners
+    SetEnvIfNoCase User-Agent .*can.* bad_bot
+    #COMMENT | This blocks most cgi hackers. delete if you use cgi
+    SetEnvIfNoCase User-Agent cg.* bad_bot
+    SetEnvIfNoCase User-Agent .*cg.* bad_bot
+    #COMMENT | This blocks hackers looking for config.php
+    SetEnvIfNoCase User-Agent conf.* bad_bot
+    SetEnvIfNoCase User-Agent .*conf.* bad_bot
+    #COMMENT | This blocks hackers some script bots
+    SetEnvIfNoCase User-Agent .*crip.* bad_bot
+    #COMMENT | This blocks curl code hackers.
+    #COMMENT | IMPORTANT delete it if you are using a ecommerce payment gateway with your site
+    SetEnvIfNoCase User-Agent cur.* bad_bot
+    SetEnvIfNoCase User-Agent .*cur.* bad_bot
+    #COMMENT | This blocks .exe code injection attempts
+    SetEnvIfNoCase User-Agent ex.* bad_bot
+    SetEnvIfNoCase User-Agent .*ex.* bad_bot
+    #COMMENT | This blocks some blackhat hackers
+    SetEnvIfNoCase User-Agent .*hat.* bad_bot
+    SetEnvIfNoCase User-Agent .*hat bad_bot
+    #COMMENT | This blocks Indybot a notorious bandwidth hog
+    SetEnvIfNoCase User-Agent indybot bad_bot
+    SetEnvIfNoCase User-Agent indy.* bad_bot
+    SetEnvIfNoCase User-Agent .*indy.* bad_bot
+    #COMMENT | This blocks remote javascript code injection attempts
+    SetEnvIfNoCase User-Agent jav.* bad_bot
+    SetEnvIfNoCase User-Agent .*jav.* bad_bot
+    #COMMENT | This blocks hackers and bots looking for your logs
+    SetEnvIfNoCase User-Agent log bad_bot
+    SetEnvIfNoCase User-Agent log.* bad_bot
+    SetEnvIfNoCase User-Agent .*log.* bad_bot
+    SetEnvIfNoCase User-Agent .*log bad_bot
+    #COMMENT | This blocks Morfeus which attempts to exploit your SOAP file
+    #COMMENT | This is extremely dangerous
+    SetEnvIfNoCase User-Agent .*orfeu.* bad_bot
+    #COMMENT | This blocks remote php file exploits
+    SetEnvIfNoCase User-Agent .*php.* bad_bot
+    SetEnvIfNoCase User-Agent .*php bad_bot
+    #COMMENT | This blocks some portscanners
+    SetEnvIfNoCase User-Agent port bad_bot
+    SetEnvIfNoCase User-Agent port.* bad_bot
+    SetEnvIfNoCase User-Agent .*port.* bad_bot
+    SetEnvIfNoCase User-Agent .*port bad_bot
+    #COMMENT | This blocks query and hotel.qunar exploits
+    SetEnvIfNoCase User-Agent .*qu.* bad_bot
+    SetEnvIfNoCase User-Agent qu.* bad_bot
+    #COMMENT | This blocks some proxys IMPORTANT delete this if you have visitors from Africa since many connections are made with Africa/Proxy
+    SetEnvIfNoCase User-Agent .*rox.* bad_bot
+    #COMMENT | This blocks mysql or sql exploits
+    SetEnvIfNoCase User-Agent sq.* bad_bot
+    SetEnvIfNoCase User-Agent .*sq.* bad_bot
+    #COMMENT | This blocks a URL scraper code
+    SetEnvIfNoCase User-Agent .*url.* bad_bot
+    #COMMENT | This blocks pythonrequests
+    SetEnvIfNoCase User-Agent .*yth.* bad_bot
+    #COMMENT | This blocks zeus (a dangerous hack code)
+    SetEnvIfNoCase User-Agent zeu.* bad_bot
+    SetEnvIfNoCase User-Agent .*zeu.* bad_bot
+    #COMMENT | This blocks ZmEu (a dangerous hack code)
+    SetEnvIfNoCase User-Agent zme.* bad_bot
+    SetEnvIfNoCase User-Agent .*zme.* bad_bot
+    #COMMENT | This blocks zgrab (a dangerous hack code)
+    SetEnvIfNoCase User-Agent zgra.* bad_bot
+    SetEnvIfNoCase User-Agent .*zgra.* bad_bot
+    #COMMENT | This denys an IP use as many as you like.
+    Deny from env=bad_bot
