@@ -5,7 +5,7 @@
                 <div class="header-profile">
                     <a href="user-profile.html"><span>Account</span></a>
                     <a href="order.html"><span>Track Order</span></a>
-                    <a href="faq.html"><span>Support</span></a>
+                    <a href="contact"><span>Support</span></a>
                 </div>
                 <div class="header-contact d-none d-lg-block">
                     <a href="#">
@@ -898,12 +898,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="about">
                                 <span class="list-text">About Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="live-price-list">
                                 <span class="list-text">Live Price List</span>
                             </a>
                         </li>
@@ -915,7 +915,7 @@
                     </ul>
                 </div>
                 <div class="header-vendor-btn">
-                    <a href="contact-us.html" class="shop-btn">
+                    <a href="contact-us" class="shop-btn">
                         <span class="list-text shop-text">Contact Us</span>
                         <span class="icon">
                             <svg width="24" height="16" viewBox="0 0 24 16" fill="none"

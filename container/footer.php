@@ -49,9 +49,9 @@
                         </h4>
                         <div class="footer-link useful-link">
                             <ul>
-                                <li><a href="about.html">Secure Payment</a></li>
-                                <li><a href="privacy.html">Privacy Policy</a></li>
-                                <li><a href="terms.html">Terms of Use</a></li>
+                                <li><a href="about">Secure Payment</a></li>
+                                <li><a href="privacy">Privacy Policy</a></li>
+                                <li><a href="terms">Terms of Use</a></li>
                                 <li><a href="product-sidebar.html">Archived Products</a></li>
                             </ul>
                         </div>

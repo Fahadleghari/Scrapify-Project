@@ -3647,9 +3647,11 @@ table .ticket-row:hover {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  
 }
 .contact-section .contact-information .contact-wrapper {
   margin: 2rem 0;
+ 
 }
 .contact-section .contact-information .contact-wrapper .row > * {
   --bs-gutter-x: 3rem;
