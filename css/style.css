@@ -93,6 +93,7 @@ img {
 iframe {
   width: 100%;
 }
+
 .container {
   max-width: 132.1rem;
 }
@@ -322,6 +323,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 0;
+  padding-top: 80px;
 }
 .section-title .view {
   font-family: jost, sans-serif;
@@ -1288,15 +1290,15 @@ button {
   padding: 10px;
 }
 .hero-slider-one {
-  background: url("../assets/images/homepage-one/hero-slider-one.webp")
+  background: url("../assets/images/homepage-one/product-img/Vector.png")
     no-repeat center/cover;
 }
 .hero-slider-two {
-  background: url("../assets/images/homepage-one/hero-slider-two.webp")
+  background: url("../assets/images/homepage-one/product-img/Vector.png")
     no-repeat center/cover;
 }
 .hero-slider-three {
-  background: url("../assets/images/homepage-one/hero-slider-three.webp")
+  background: url("../assets/images/homepage-one/product-img/Vector.png")
     no-repeat center/cover;
 }
 @media (max-width: 767px) {
@@ -1312,7 +1314,7 @@ button {
   border-radius: 30px;
 }
 .swiper-pagination-bullet-active {
-  background-color: #071B2F;
+  background-color: white;
 }
 .wrapper-section .wrapper-subtitle {
   font-size: 2.4rem;
@@ -1320,7 +1322,7 @@ button {
 }
 .wrapper-section .wrapper-subtitle .wrapper-inner-title {
   font-size: 4rem;
-  color: #071B2F;
+  color: #232532;
 }
 .wrapper-section .shop-btn {
   padding: 1.4rem 4.6rem;
@@ -1419,11 +1421,11 @@ button {
   text-align: center;
   border-radius: 3rem;
   display: inline-block;
-  background: #00DA6C;
+  background: #071B2F;
   font-size: 1.4rem;
   font-weight: 500;
   position: relative;
-  color: #232532;
+  color: #fff;
   font-family: inter, sans-serif;
   transition: all 0.3s;
   overflow: hidden;
@@ -1468,7 +1470,7 @@ button {
   color: #fff;
 }
 .wrapper-one .shop-btn svg {
-  fill: #232532;
+  fill: #ffffff;
 }
 .wrapper-two {
   background: url("../assets/images/homepage-one/style-bg-two.webp") no-repeat
@@ -1480,7 +1482,7 @@ button {
   text-align: center;
   border-radius: 3rem;
   display: inline-block;
-  background: #071B2F;
+  background: #00DA6C;
   font-size: 1.4rem;
   font-weight: 500;
   position: relative;
@@ -1529,7 +1531,7 @@ button {
   color: #fff;
 }
 .category-section {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 3rem;
 }
@@ -1554,25 +1556,29 @@ button {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background: #00DA6C;
+  background: #ffffff;
   height: 18rem;
   border-radius: 1.2rem;
-  border: 1px solid #00DA6C;
-  transition: all 0.3s;
+  border: 1px solid #fcfffd;
+  transition: all 0.3s; /* Add transition for all properties */
   padding-bottom: 0;
+  transform: scale(1); /* Initial state */
 }
 .category-section .product-wrapper .wrapper-img img {
   transition: all 0.2s ease-in-out;
 }
 .category-section .product-wrapper:hover {
   border: 1px solid #071B2F;
+  background: rgba(0, 218, 108, 1);
+  transform: scale(2.2s); /* Change scale on hover */
 }
 .category-section .product-wrapper:hover .wrapper-img img {
   transform: scale(1.2);
 }
 .category-section .product-wrapper .wrapper-details {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  color: rgba(7, 27, 47, 1);
 }
 .brand-section {
   display: grid;
@@ -1745,7 +1751,7 @@ button {
     align-items: flex-start;
   }
   .top-selling-section .product-wrapper .price {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .best-seller {
@@ -1819,9 +1825,10 @@ button {
 }
 .weekly-sale .style-section {
   padding-top: 6rem;
+  padding-bottom: 70px ;
 }
 .weekly-sale .style-section .wrapper-one {
-  background: url("../assets/images/homepage-one/style-bg-three.webp") no-repeat
+  background: url("../assets/images/homepage-one/Group\ 272.png") no-repeat
     center/cover;
   display: flex;
   flex-direction: row;
@@ -1830,8 +1837,9 @@ button {
   gap: 0;
 }
 .weekly-sale .style-section .wrapper-two {
-  background: url("../assets/images/homepage-one/style-bg-four.webp") no-repeat
+  background: url("../assets/images/homepage-one/Group\ 273.png") no-repeat
     center/cover;
+   
 }
 @media (max-width: 767px) {
   .weekly-sale h5 {
@@ -1843,6 +1851,8 @@ button {
   background-color: #f9edf7;
   padding-bottom: 11.2rem;
 }
+
+
 .best-product .product-wrapper {
   height: 31.5rem;
   padding-top: 0;
@@ -1869,32 +1879,37 @@ button {
   }
 }
 .footer {
-  background: url(../assets/images/homepage-one/footer-bg.webp);
-  font-family: league spartan, sans-serif;
+  background:url(../assets/images/homepage-one/Scrapify/footer\ background.png);
+  font-family:league spartan, sans-serif;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
 }
+
 .footer-padding {
   padding-bottom: 12rem !important;
 }
 .footer-service-section {
-  background-color: #071B2F;
+  background-color: rgba(0, 218, 108, 1);
   padding: 2.8rem;
   margin-top: -11rem;
   border-radius: 4px;
 }
 .footer-service-section .service-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
 .footer-service-section .service-wrapper .service-info {
   font-size: 1.6rem;
-  color: #fff;
+  color: rgba(0, 0, 0, 1);
   margin-bottom: 0;
+  text-align: center;
 }
 .footer-service-section .service-wrapper .service-details {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 @media (max-width: 1023px) {
@@ -1932,8 +1947,18 @@ button {
   color: #071B2F;
   text-decoration: underline;
 }
+.row.gy-5 {
+  padding: 0px 50px;
+}
 .footer-section .footer-link p {
   color: #c8c8c8;
+}
+.footer-text{
+  font-size: 16px;
+  color: #fafafa;
+  font-weight: 400;
+  font-family: inter, sans-serif;
+  margin-bottom: 0;
 }
 .footer-section .footer-link ul {
   padding-left: 0;
@@ -1973,6 +1998,7 @@ button {
 }
 .product-info-section .row > * {
   --bs-gutter-y: 50px;
+
 }
 .product-info-img .swiper {
   position: relative;
@@ -3903,13 +3929,14 @@ table .ticket-row:hover {
   align-items: center;
   justify-content: center;
   gap: 0;
+  padding:100px 0px ;
 }
 .about-promotion::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #071B2F;
+  
   z-index: 10;
   opacity: 0.6;
 }
@@ -4772,3 +4799,130 @@ table .ticket-row:hover {
 .user-dashboard .nav-content .modal-wrapper.active {
   display: flex;
 }
+
+
+
+.wrapper-details-273{
+  color: #00DA6C;
+  padding-top: 50px;
+}
+.wrapper-details-271{
+  color: rgba(7, 27, 47, 1);
+  padding-top: 50px;
+}
+
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding-top: 100px ;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%; 
+  height: 155px ;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.content {
+  flex: 1;
+}
+
+h5, p {
+  margin: 0;
+  
+  
+}
+.title , .description{
+  color: white;
+}
+
+.price-box {
+  color: white;
+  font-size: 20px;
+}
+
+
+.hero-banner {
+  background-image: url('../assets/images/homepage-one/product-img/Vector.png'); /* Replace 'your-image-url.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-banner h5.about-info {
+  color: white;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.our-banner {
+  position: relative;
+  width: 100%;
+  /* Adjust height as needed */
+  background-image: url('../assets/images/homepage-one/about/3-B.png'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+section.about.our-banner p.about-info {
+  color: black;
+}
+
+
+
+#mobile-sec img.img-fluid {
+  transition: all 0.2s ease-in-out;
+}
+
+
+#mobile-sec .row.align-items-center.p-4.px-4.rounded:hover img.img-fluid {
+   transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
