@@ -94,6 +94,51 @@ iframe {
   width: 100%;
 }
 
+
+/* my css start */
+
+/* home page css start  */
+.hero-section-home h1 {
+  font-size: 15em;
+  /* border-right: solid 3px #071B2F; */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s infinite alternate, animated-cursor 600ms steps(29) infinite;
+}
+
+@keyframes animated-text {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes animated-cursor {
+  0%, 100% {
+    border-right-color: #071B2F;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+/* responsive h1 in mobile view  */
+
+@media (max-width: 767px) {
+  .hero-section-home h1 {
+    font-size: 7em;
+  }
+}
+
+ /* home page css end  */
+
+
+
+
+/* my css end */
+
 .container {
   max-width: 132.1rem;
 }
@@ -175,6 +220,13 @@ button {
   .product {
     padding: 3rem 0;
   }
+}
+
+.product-category .category-section .product-wrapper:first-child{
+  background-color: #00DA6C;
+}
+.product-category .category-section .product-wrapper{
+  border:  3px solid #00DA6C;
 }
 .product-wrapper {
   width: 100%;
@@ -1550,6 +1602,7 @@ button {
   }
 }
 .category-section .product-wrapper {
+  
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -1584,7 +1637,7 @@ button {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0;
-  border: 1px solid #00DA6C;
+  border: 1px solid #c8c8c8;
 }
 .brand-section .product-wrapper {
   display: flex;
@@ -1601,7 +1654,7 @@ button {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
   background: #fff;
-  border: 1px solid #00DA6C;
+  border: 1px solid #c8c8c8;
   box-shadow: none;
 }
 .brand-section .product-wrapper .wrapper-img {
@@ -1903,14 +1956,14 @@ button {
   gap: 2rem;
 }
 .footer-service-section .service-wrapper .service-info {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 1);
   margin-bottom: 0;
   text-align: center;
 }
 .footer-service-section .service-wrapper .service-details {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 @media (max-width: 1023px) {
   .footer-service-section .gy-4 {
