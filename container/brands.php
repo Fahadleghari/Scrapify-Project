@@ -2,7 +2,7 @@
     <div class="container">
       <div class="section-title">
         <h5>Brand of Prodcuts</h5>
-       
+        <a href="#" style="color: #071B2F">View All</a>
       </div>
       <div class="brand-section">
         <div class="product-wrapper">
