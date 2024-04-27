@@ -81,7 +81,7 @@
                                                 </div>
                                                 <div class="wrapper-content">
                                                     <h5 class="wrapper-heading">Phone</h5>
-                                                    <p class="paragraph" style="color:rgba(0, 218, 108, 1);">+1347-430-9510</p>
+                                                    <p class="paragraph" style="color:rgba(0, 218, 108, 1);"><?php echo $num; ?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@
                                                     <p class="paragraph" ><a style="color:#00DA6C;"
                                                             href="https://quomodothemes.website/cdn-cgi/l/email-protection"
                                                             class="__cf_email__"
-                                                            data-cfemail="6d381e081f2d0a000c0401430e0200">info@gmail.com</a>
+                                                            data-cfemail="6d381e081f2d0a000c0401430e0200"><?php echo $email ?></a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -136,8 +136,7 @@
                                                     </div>
                                                     <div class="address-content">
                                                         <h5 class="wrapper-heading text-light">Address</h5>
-                                                        <p class="paragraph text-light" >2140 W Thunderbird Rd, Phoenix, Arkansas
-                                                            85023, United States</p>
+                                                        <p class="paragraph text-light" ><?php echo $address; ?></p>
                                                     </div>
                                                 </div>
                                                 <div class="contact-map">
