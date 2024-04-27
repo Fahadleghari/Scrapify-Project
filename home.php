@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/images/homepage-one/icon.png">
 
-  <title>Shopus: Your One-Stop Destination for Fashion and Style</title>
+  <title>Home</title>
 
   <!-- links  -->
 
@@ -94,17 +94,21 @@
 
   <section class="about" id="mobile-sec">
     <div class="container ">
+    <div class="section-title">
+        <h5 id="mbl-title" id="mbl-title">Cell Phones & Tablet Category</h5>
+        
+      </div>
       <div class="about-section ">
-        <div class="row align-items-center gx-3 gy-3 pb-5">
-          <div class="col-lg-6 ">
+        <div class="row align-items-center gx-3 gy-3 pb-5" >
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
-              <div class="row align-items-center p-4 rounded-4" style="background-color: #31ade4;">
+              <div class="row align-items-center p-4 rounded-4" style="background-image:linear-gradient(to left, #3BB0DE, #14A2F1);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Older<br>Cell Phone</h4>
-                  <p class="description">With Keypad<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">Older <br> Cell Phone</h4>
+                  <p class="description">With Keypad </p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid"
+                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-11.png" class="img-fluid"
                     alt="Older Cell Phone" title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
@@ -113,16 +117,16 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ">
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
               <div class="row align-items-center p-4 px-4 rounded-4"
-                style="background-image:linear-gradient(to left, #555ae0, #8d63e7);">
+                style="background-image:linear-gradient(to left, #5451E3, #925EEA);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Wireless<br>Handheld</h4>
-                  <p class="description text-2xl">Keyboard Laser Scanner<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">Wireless <br> Handheld</h4>
+                  <p class="description text-2xl">Keyboard Laser </p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid" alt="Older Cell Phone"
+                  <img src="assets/images/homepage-one/product-img/C-22.png" class="img-fluid" alt="Older Cell Phone"
                     title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
@@ -134,37 +138,37 @@
           
         </div>
         <div class="row align-items-center gx-3 gy-3 pb-5">
-          <div class="col-lg-6 ">
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
-              <div class="row align-items-center p-4 rounded-4" style="background-color: #31ade4;">
+              <div class="row align-items-center p-4 rounded-4" style="background-image:linear-gradient(to left, #BB5352, #E46662);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Older<br>Cell Phone</h4>
-                  <p class="description">With Keypad<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">Modern  Phone</h4>
+                  <p class="description">No Battery No Cover</p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid"
+                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-33.png" class="img-fluid"
                     alt="Older Cell Phone" title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
-                  <p class="price-box">$5.50</p>
+                  <p class="price-box">$2.75</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ">
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
               <div class="row align-items-center p-4 px-4 rounded-4"
-                style="background-image:linear-gradient(to left, #555ae0, #8d63e7);">
+                style="background-image:linear-gradient(to left, #8F56EA, #E13650);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Wireless<br>Handheld</h4>
-                  <p class="description text-2xl">Keyboard Laser Scanner<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">Any <br> Cell Phone</h4>
+                  <p class="description text-2xl">With Battery</p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid" alt="Older Cell Phone"
+                  <img src="assets/images/homepage-one/product-img/C-44.png" class="img-fluid" alt="Older Cell Phone"
                     title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
-                  <p class="price-box">$4.00</p>
+                  <p class="price-box">$1.50</p>
                 </div>
               </div>
             </div>
@@ -173,37 +177,37 @@
         </div>
 
         <div class="row align-items-center gx-3 gy-3 pb-5">
-          <div class="col-lg-6 ">
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
-              <div class="row align-items-center p-4 rounded-4" style="background-color: #31ade4;">
+              <div class="row align-items-center p-4 rounded-4" style="background-image:linear-gradient(to left, #071B2F, #165695);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Older<br>Cell Phone</h4>
-                  <p class="description">With Keypad<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">Tablet</h4>
+                  <p class="description">Lorem Ipsum</p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid"
+                  <img data-aos-duration="400" src="assets/images/homepage-one/product-img/C-55.png" class="img-fluid"
                     alt="Older Cell Phone" title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
-                  <p class="price-box">$5.50</p>
+                  <p class="price-box">$0.50</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ">
+          <div class="col-6 " id="mbl-title">
             <div class="about-content" data-aos="fade-right">
               <div class="row align-items-center p-4 px-4 rounded-4"
-                style="background-image:linear-gradient(to left, #555ae0, #8d63e7);">
+                style="background-image:linear-gradient(to left, #00DA6C, #06984E);">
                 <div class="col-md-4 p-0">
-                  <h4 class="title">Wireless<br>Handheld</h4>
-                  <p class="description text-2xl">Keyboard Laser Scanner<br>No Battery No Back</p>
+                  <h4 class="title" id="mbl-title">IPod/MP3</h4>
+                  <p class="description text-2xl">Players</p>
                 </div>
                 <div class="col-md-6 p-0">
-                  <img src="assets/images/homepage-one/product-img/C-1.png" class="img-fluid" alt="Older Cell Phone"
+                  <img src="assets/images/homepage-one/product-img/C-66.png" class="img-fluid" alt="Older Cell Phone"
                     title="Older Cell Phone">
                 </div>
                 <div class="col-md-2 p-0">
-                  <p class="price-box">$4.00</p>
+                  <p class="price-box">$0.25</p>
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/homepage-one/icon.png">
 
-    <title>Shopus | Profile</title>
+    <title>Profile</title>
 
     <?php include ('container/links.php') ?>
 </head>

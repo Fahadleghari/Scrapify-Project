@@ -6,7 +6,7 @@
          content="ShopUS, bootstrap-5, bootstrap, sass, css, HTML Template, HTML,html, bootstrap template, free template, figma, web design, web development,front end, bootstrap datepicker, bootstrap timepicker, javascript, ecommerce template">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="assets/images/homepage-one/icon.png">
-      <title>Shopus | About Us</title>
+      <title> About Us</title>
       <?php include ('container/links.php') ?>
    </head>
    <body>
@@ -17,15 +17,15 @@
       <section class="about hero-banner">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
                   
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" >
                      <div class="about-content" data-aos="fade-right">
                         <h2 class="about-title">About Us</h2>
                         
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" >
                      <div class="about-content" data-aos="fade-left">
                         
                         <h5 class="about-info">
@@ -44,7 +44,7 @@
       <section class="about">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
                   <div class="col-lg-6">
                      <div class="about-img" data-aos="fade-right">
                         <img src="assets/images/homepage-one/about/A-2.png" alt="img">
@@ -78,14 +78,15 @@
             </div>
          </div>
       </section>
+      
       <section class="about our-banner">
-         <div class="container">
+         <div class="container ">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
-                  <div class="col-lg-6">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
+                  <div class="col-lg-6" id="Welcome-to-Scrapify">
                      <div class="about-content" data-aos="fade-up">
                         <h3 class="about-title">Our Mission</h3>
-                        <p class="about-info">
+                        <p class="about-info" id="Welcome-to-Scrapify" >
                         At Scrapify, we are committed to an environmentally sustainable approach to electronic waste. By choosing us, you're not just disposing of your e-scrap; you're contributing to a global effort to reduce electronic waste. Our innovative technology allows us to offer you prices above the market rate for your electronic scrap, turning what was once waste into valuable resources.
                         </p>
                      </div>
@@ -102,13 +103,13 @@
       <section class="about">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
-                  <div class="col-lg-6">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
+                  <div class="col-lg-6 pb-5">
                      <div class="about-img" data-aos="fade-right">
                         <img src="assets/images/homepage-one/about/A-4.png" alt="img">
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" id="Welcome-to-Scrapify">
                      <div class="about-content" data-aos="fade-up">
                         <h3 class="about-title">Why Scrapify?</h3>
                         <p class="about-info">
@@ -121,6 +122,10 @@
             </div>
          </div>
       </section>
+
+      <?php include ('container/footer.php') ?>
+
+
      <?php include ('container/scripts.php') ?>
    </body>
 </html>

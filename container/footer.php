@@ -34,10 +34,10 @@
                         </h4>
                         <div class="footer-link about-link">
                             <ul>
-                                <li><a href="about.html">Rave’s Story</a></li>
-                                <li><a href="about.html">Work With Us</a></li>
-                                <li><a href="about.html">Coporate News</a></li>
-                                <li><a href="about.html">Investors</a></li>
+                                <li><a href="#">Rave’s Story</a></li>
+                                <li><a href="#">Work With Us</a></li>
+                                <li><a href="#">Coporate News</a></li>
+                                <li><a href="#">Investors</a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                                 <li><a href="about">Secure Payment</a></li>
                                 <li><a href="privacy">Privacy Policy</a></li>
                                 <li><a href="terms">Terms of Use</a></li>
-                                <li><a href="product-sidebar.html">Archived Products</a></li>
+                                <li><a href="#">Archived Products</a></li>
                             </ul>
                         </div>
                     </div>
