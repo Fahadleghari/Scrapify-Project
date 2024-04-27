@@ -375,7 +375,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 0;
-  padding-top: 80px;
+ padding-top: 30px;
 }
 .section-title .view {
   font-family: jost, sans-serif;
@@ -1621,7 +1621,7 @@ button {
   transition: all 0.2s ease-in-out;
 }
 .category-section .product-wrapper:hover {
-  border: 1px solid #071B2F;
+ 
   background: rgba(0, 218, 108, 1);
   transform: scale(2.2s); /* Change scale on hover */
 }
@@ -1937,10 +1937,13 @@ button {
   background-position:center;
   background-repeat:no-repeat;
   background-size:contain;
+  
+ 
 }
 
 .footer-padding {
   padding-bottom: 12rem !important;
+  
 }
 .footer-service-section {
   background-color: rgba(0, 218, 108, 1);
@@ -1968,6 +1971,7 @@ button {
 @media (max-width: 1023px) {
   .footer-service-section .gy-4 {
     --bs-gutter-y: 2rem;
+    ;
   }
   .footer-service-section .service-wrapper {
     justify-content: flex-start;
@@ -1982,7 +1986,7 @@ button {
   padding-top: 6rem;
 }
 .footer-section .logo {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 .footer-section .footer-heading {
   font-size: 2rem;
@@ -1995,10 +1999,12 @@ button {
   color: #c8c8c8;
   font-size: 1.5rem;
   font-weight: 300;
+ 
 }
 .footer-section .footer-link a:hover {
-  color: #071B2F;
-  text-decoration: underline;
+  color: rgba(0, 218, 108, 1);
+ 
+  
 }
 .row.gy-5 {
   padding: 0px 50px;
@@ -2046,6 +2052,7 @@ button {
     padding: 0;
   }
 }
+
 .product-info-section {
   margin-top: 2.5rem;
 }
@@ -3700,9 +3707,11 @@ table .ticket-row:hover {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  
 }
 .contact-section .contact-information .contact-wrapper {
   margin: 2rem 0;
+ 
 }
 .contact-section .contact-information .contact-wrapper .row > * {
   --bs-gutter-x: 3rem;
@@ -4922,7 +4931,7 @@ h5, p {
 
 
 .hero-banner {
-  background-image: url('../assets/images/homepage-one/product-img/Vector.png'); /* Replace 'your-image-url.jpg' with your image path */
+  background-image: url('../assets/images/homepage-one/product-img/Vector.png'); 
   background-size: cover;
   background-position: center;
 }
@@ -4937,7 +4946,7 @@ h5, p {
   position: relative;
   width: 100%;
   /* Adjust height as needed */
-  background-image: url('../assets/images/homepage-one/about/3-B.png'); /* Replace 'your-image.jpg' with the path to your image */
+  background-image: url('../assets/images/homepage-one/about/3-B.png');
   background-size: cover;
   background-position: center;
 }
@@ -4948,16 +4957,97 @@ section.about.our-banner p.about-info {
   color: black;
 }
 
+.about-content img {
+  transition: transform 0.3s ease-in-out; /* Add a transition effect to the transform property */
+}
 
-
-#mobile-sec img.img-fluid {
-  transition: all 0.2s ease-in-out;
+.about-content img:hover {
+  transform: scale(1.1); 
 }
 
 
-#mobile-sec .row.align-items-center.p-4.px-4.rounded:hover img.img-fluid {
-   transform: scale(1.2);
+@media (max-width: 420px) {
+  .footer {
+    background:url(../assets/images/homepage-one/Scrapify/footer\ background.png);
+    font-family:league spartan, sans-serif;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: COVER;
+  }
+  
 }
+
+@media (max-width: 420px) {
+  .wrapper-details-271 {
+    color: rgba(7, 27, 47, 1);
+    padding-top: 50px;
+    color: white;
+}
+}
+
+
+
+@media (max-width: 420px) {
+  
+   #mobile-sec {
+   padding-bottom: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    br{
+      display: none;
+    }
+    
+    
+}
+}
+
+@media (max-width: 420px) {
+  
+  #scarify-benner{
+    padding: 0px 0px;
+    
+  
+   br{
+    display: none;
+   }
+   .about-title{
+    font-size: 35px;
+   }
+   }  
+}
+
+
+
+@media (max-width: 420px) {
+  
+  #Welcome-to-Scrapify{
+    padding: 35px 0px;
+    margin: 0px 0px;
+    
+  
+  
+   }  
+}
+
+
+@media (max-width: 420px) {
+  
+  #mbl-title {
+    font-size: 15px;
+    padding: 0px 10px;
+    height:70%;
+    font-weight: 800;
+  }
+    br{
+    display: none;
+  }
+  
+  
+   }  
+
+
 
 
 

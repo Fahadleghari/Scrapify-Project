@@ -6,35 +6,26 @@
          content="ShopUS, bootstrap-5, bootstrap, sass, css, HTML Template, HTML,html, bootstrap template, free template, figma, web design, web development,front end, bootstrap datepicker, bootstrap timepicker, javascript, ecommerce template">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="assets/images/homepage-one/icon.png">
-      <title>Shopus | About Us</title>
+      <title> About Us</title>
       <?php include ('container/links.php') ?>
    </head>
    <body>
       <?php include ('container/header.php') ?>
-      <!-- <div class="banner">
-         <div class="content">
-            <div class="left">
-               <h1>About Us</h1>
-            </div>
-            <div class="right">
-               <p>Discover the future of electronic waste <br> recycling with Scrapify,</p>
-            </div>
-         </div>
-      </div> -->
+     
 
 
       <section class="about hero-banner">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
                   
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" >
                      <div class="about-content" data-aos="fade-right">
                         <h2 class="about-title">About Us</h2>
                         
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" >
                      <div class="about-content" data-aos="fade-left">
                         
                         <h5 class="about-info">
@@ -53,7 +44,7 @@
       <section class="about">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
                   <div class="col-lg-6">
                      <div class="about-img" data-aos="fade-right">
                         <img src="assets/images/homepage-one/about/A-2.png" alt="img">
@@ -70,7 +61,7 @@
                            on your electronic scrap.
                         </p>
                         <div class="header-vendor-btn">
-                           <a href="contact-us.html" class="shop-btn">
+                           <a href="contact-us" class="shop-btn">
                               <span class="list-text shop-text">Contact Us</span>
                               <span class="icon">
                                  <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
@@ -87,14 +78,15 @@
             </div>
          </div>
       </section>
+      
       <section class="about our-banner">
-         <div class="container">
+         <div class="container ">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
-                  <div class="col-lg-6">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
+                  <div class="col-lg-6" id="Welcome-to-Scrapify">
                      <div class="about-content" data-aos="fade-up">
                         <h3 class="about-title">Our Mission</h3>
-                        <p class="about-info">
+                        <p class="about-info" id="Welcome-to-Scrapify" >
                         At Scrapify, we are committed to an environmentally sustainable approach to electronic waste. By choosing us, you're not just disposing of your e-scrap; you're contributing to a global effort to reduce electronic waste. Our innovative technology allows us to offer you prices above the market rate for your electronic scrap, turning what was once waste into valuable resources.
                         </p>
                      </div>
@@ -111,33 +103,29 @@
       <section class="about">
          <div class="container">
             <div class="about-section">
-               <div class="row align-items-center gy-5">
-                  <div class="col-lg-6">
+               <div class="row align-items-center gy-5" id="Welcome-to-Scrapify">
+                  <div class="col-lg-6 pb-5">
                      <div class="about-img" data-aos="fade-right">
                         <img src="assets/images/homepage-one/about/A-4.png" alt="img">
                      </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6" id="Welcome-to-Scrapify">
                      <div class="about-content" data-aos="fade-up">
                         <h3 class="about-title">Why Scrapify?</h3>
                         <p class="about-info">
                            Choosing Scrapify means partnering with an environmentally conscious e-waste recycler that offers competitive prices for your scrap electronics. Our process is transparent and ensures you receive comprehensive documentation for your records. Trust us to handle your electronic waste with the care it deserves, ensuring it doesn't just avoid landfills but also brings you the best financial return.
                         </p>
-                        <div class="header-vendor-btn">
-                        </div>
+                        
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <?php include ('container/brands.php') ?> 
+
       <?php include ('container/footer.php') ?>
-      <script src="assets/js/jquery_3.7.1.min.js"></script>
-      <script src="assets/js/bootstrap_5.3.2.bundle.min.js"></script>
-      <script src="assets/js/nouislider.min.js"></script>
-      <script src="assets/js/aos-3.0.0.js"></script>
-      <script src="assets/js/swiper10-bundle.min.js"></script>
-      <script src="assets/js/shopus.js"></script>
+
+
+     <?php include ('container/scripts.php') ?>
    </body>
 </html>
